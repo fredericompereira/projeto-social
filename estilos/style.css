@@ -4,3 +4,49 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: #eeeeee url(../imagens/fundo-madeira.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+
+#container-celular {
+    position: relative;
+    width: 276px;
+    height: 570px;
+    display: block;
+    margin: 35px auto;
+    background: url(../imagens/frame-s22.png) center no-repeat scroll;
+    background-size: contain;
+}
+
+#iframe-celular {
+    position: absolute;
+    width: 254px;
+    height: 549px;
+    top: 10px;
+    left: 10px;
+    background: white url(../imagens/tela-inicio.jpg) center no-repeat scroll;
+    background-size: cover;
+    border: 0;
+    border-radius: 24px;
+}
+
+#container-links {
+    width: 50px;
+    height: fit-content;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    margin-right: 20px;
+}
+
+.logo-social {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.logo-social:hover {
+    box-shadow: 0px 0px 20px #252525;
+}
