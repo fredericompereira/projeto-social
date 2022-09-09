@@ -5,48 +5,56 @@
     padding: 0;
 }
 
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
 body {
     background: #eeeeee url(../imagens/fundo-madeira.jpg) center no-repeat fixed;
     background-size: cover;
 }
 
-#container-celular {
+main {
+    height: 100vh;
     position: relative;
-    width: 276px;
-    height: 570px;
-    display: block;
-    margin: 35px auto;
-    background: url(../imagens/frame-s22.png) center no-repeat scroll;
-    background-size: contain;
 }
 
-#iframe-celular {
+#container-celular {
     position: absolute;
-    width: 254px;
-    height: 549px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    height: 600px;
+    background: url(../imagens/frame-s22-p.png) no-repeat;
+}
+
+#tela {
+    position: relative;
     top: 10px;
     left: 10px;
-    background: white url(../imagens/tela-inicio.jpg) center no-repeat scroll;
-    background-size: cover;
+    width: 267px;
+    height: 578px;
     border: 0;
-    border-radius: 24px;
+    border-radius: 28px;
 }
 
 #container-links {
-    width: 50px;
-    height: fit-content;
     position: absolute;
-    top: 35px;
+    top: 20px;
     right: 0;
     margin-right: 20px;
 }
 
 .logo-social {
-    width: 100%;
+    width: 50px;
     margin-bottom: 20px;
-    border-radius: 25px;
+    border-radius: 50%;
+    display: block;
+    box-sizing: border-box;
 }
 
 .logo-social:hover {
-    box-shadow: 0px 0px 20px #252525;
+    border: 3px solid white;
 }
